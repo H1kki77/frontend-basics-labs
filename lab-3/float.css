@@ -1,0 +1,65 @@
+/* Завдання 1: блочна верстка за допомогою float, ширина у відсотках */
+body {
+  margin: 0;
+  background-color: #f7fdff;
+  font-family: Arial, sans-serif;
+}
+
+.nav {
+  margin: 10px 20px;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 40px auto;
+}
+
+.block {
+  float: left;
+  display: flex;            /* лише для центрування підпису всередині блоку */
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 18px;
+}
+
+/* ліва колонка IMG: від верху до футера */
+.green {
+  width: 30%;
+  height: 340px;
+  background-color: #96f7b4;
+}
+
+/* шапка TEXT над жовтим і рожевим блоками */
+.header {
+  width: 70%;
+  height: 50px;
+  background-color: #74d6f2;
+}
+
+/* центральний IMG */
+.yellow {
+  width: 40%;
+  height: 290px;
+  background-color: #f5f495;
+}
+
+/* права колонка TEXT: від шапки до самого низу.
+   float: right — щоб футер (лівий float) міг стати поруч з нею */
+.pink {
+  float: right;
+  width: 30%;
+  height: 340px;
+  background-color: #ef94ef;
+}
+
+/* футер TEXT під зеленим і жовтим блоками, ліворуч від рожевого */
+.footer {
+  width: 70%;
+  height: 50px;
+  background-color: #f7e2b1;
+}
+
+.clear {
+  clear: both;
+}
