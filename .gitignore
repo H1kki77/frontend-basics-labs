@@ -1,0 +1,14 @@
+# матеріали курсу
+*.pdf
+*.xlsx
+
+# звіти, скріншоти та макети — тільки локально
+*.docx
+lab-*/screenshots/
+lab-*/*.jpg
+
+# службові файли
+.remember/
+.claude/
+.DS_Store
+node_modules/
