@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Коробай Владислав Максимович, ІП-44, ЛР-5, варіант 14 / 9</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Лабораторна робота №5. Події. Регулярні вирази</h1>
+
+  <section>
+    <h2>Завдання 1. Форма з перевіркою (рядок 14 табл. 1: поля 1, 4, 5, 7, 9)</h2>
+    <form id="info-form" novalidate>
+      <div class="form-row" data-field="fio">
+        <label for="fio">ПІБ</label>
+        <input type="text" id="fio" placeholder="Коробай В.М.">
+        <span class="hint">Формат: Прізвище І.Б.</span>
+      </div>
+      <div class="form-row" data-field="phone">
+        <label for="phone">Телефон</label>
+        <input type="text" id="phone" placeholder="(093)-285-17-87">
+        <span class="hint">Формат: (ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ</span>
+      </div>
+      <div class="form-row" data-field="idcard">
+        <label for="idcard">ID-card</label>
+        <input type="text" id="idcard" placeholder="АБ №123456">
+        <span class="hint">Формат: ТТ №ЧЧЧЧЧЧ</span>
+      </div>
+      <div class="form-row" data-field="birth">
+        <label for="birth">Дата народж.</label>
+        <input type="text" id="birth" placeholder="24.12.2006">
+        <span class="hint">Формат: ЧЧ.ЧЧ.ЧЧЧЧ</span>
+      </div>
+      <div class="form-row" data-field="email">
+        <label for="email">e-mail</label>
+        <input type="text" id="email" placeholder="vkorobay@gmail.com">
+        <span class="hint">Формат: тттттт@ттттт.com</span>
+      </div>
+      <button type="submit">Надіслати</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Завдання 2. Таблиця 6×6 (варіант 9)</h2>
+    <p>
+      Клітинка №9: наведення — випадковий колір, клік — колір з палітри,
+      подвійний клік — клітинки її стовпця, починаючи з неї, через одну.
+    </p>
+    <label>Колір з палітри: <input type="color" id="palette" value="#3498db"></label>
+    <table id="grid"></table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
