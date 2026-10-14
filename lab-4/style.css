@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 16px;
+  line-height: 1.5;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+#city-text,
+.photo-caption {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#city-photo {
+  display: block;
+  height: auto;
+}
+
+.buttons {
+  margin: 12px 0;
+}
+
+.buttons button {
+  padding: 6px 14px;
+  margin-right: 6px;
+  cursor: pointer;
+}
