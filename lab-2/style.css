@@ -1,0 +1,40 @@
+/* Завдання 2: прапор Японії лише засобами CSS */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.flags {
+  display: flex;
+  gap: 40px;
+}
+
+.flag {
+  width: 300px;
+  height: 200px;
+  background-color: #ffffff;
+  border: 1px solid #999;
+}
+
+.sun {
+  width: 120px;
+  height: 120px;
+  background-color: #bc002d;
+  border-radius: 50%;
+}
+
+/* 1. position: absolute відносно батька з position: relative */
+.flag-position {
+  position: relative;
+}
+
+.flag-position .sun {
+  position: absolute;
+  top: 40px;   /* (200 - 120) / 2 */
+  left: 90px;  /* (300 - 120) / 2 */
+}
+
+/* 2. transform: translate зсуває коло в центр без position */
+.flag-transform .sun {
+  transform: translate(90px, 40px);
+}

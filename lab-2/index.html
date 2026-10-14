@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Лабораторна робота №2: таблиці в HTML5, зображення засобами CSS3">
+  <title>Коробай Владислав Максимович, ІП-44, ЛР-2, варіант 9</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Завдання 1: таблиця (варіант 9), стилі в цьому ж файлі */
+    table {
+      width: 880px;
+      table-layout: fixed;      /* ширини стовпців беруться з <col>, а не з тексту */
+      border-collapse: separate;
+      border: 2px solid #555;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    /* пропорції стовпців як на схемі варіанту 9: 2 : 2 : 2 : 1 : 1 */
+    col.wide {
+      width: 25%;
+    }
+
+    col.narrow {
+      width: 12.5%;
+    }
+
+    tr {
+      height: 45px;
+    }
+
+    td {
+      border: 2px solid #888;
+      padding: 4px 8px;
+    }
+
+    /* 1-й рядок: #nn8f8f, nn = 09; текст #000000 — контраст 5.34:1 (WCAG AA) */
+    tr.row-1 td {
+      background-color: #098f8f;
+      color: #000000;
+    }
+
+    /* 2-й рядок: #f5f5nn, nn = 09; текст #3d0a91 — контраст 10.87:1 */
+    tr.row-2 td {
+      background-color: #f5f509;
+      color: #3d0a91;
+    }
+
+    /* при наведенні кольори змінюються на протилежні:
+       фон і текст міняються місцями, тому контраст зберігається */
+    tr.row-1:hover td {
+      background-color: #000000;
+      color: #098f8f;
+    }
+
+    tr.row-2:hover td {
+      background-color: #3d0a91;
+      color: #f5f509;
+    }
+  </style>
+</head>
+<body>
+  <h1>Лабораторна робота №2</h1>
+
+  <h2>Завдання 1. Таблиця (варіант 9)</h2>
+  <table>
+    <colgroup>
+      <col class="wide">
+      <col class="wide">
+      <col class="wide">
+      <col class="narrow">
+      <col class="narrow">
+    </colgroup>
+    <tr class="row-1">
+      <td colspan="2" rowspan="2">Коробай</td>
+      <td colspan="3">Владислав Максимович</td>
+    </tr>
+    <tr class="row-2">
+      <td rowspan="2">ІП-44</td>
+      <td rowspan="3">ЛР-2</td>
+      <td rowspan="3">Варіант 9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <h2>Завдання 2. Прапор Японії (варіант 9)</h2>
+  <div class="flags">
+    <div class="flag-box">
+      <p>1. За допомогою position</p>
+      <div class="flag flag-position">
+        <div class="sun"></div>
+      </div>
+    </div>
+
+    <div class="flag-box">
+      <p>2. За допомогою transform</p>
+      <div class="flag flag-transform">
+        <div class="sun"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
